@@ -1,0 +1,333 @@
+.counters {
+  height: 250px;
+  background-color: var(--primary);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.service {
+  margin-top: 30px;
+  height: 900px;
+  text-align: center;
+  justify-content: center;
+}
+.outer-p {
+  width: 70%;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+.service h1 {
+  display: inline;
+  border-bottom: 4px solid var(--primary);
+  font-weight: none;
+  padding-bottom: 10px;
+}
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  /* background-color:red; */
+  margin: 20px 90px;
+}
+.service-card {
+  height: 300px;
+  width: 100%;
+  border: 2px solid #e6e6e6;
+  background-color: #f7f7f7;
+  padding: 70px 20px;
+}
+.service-card img {
+  height: 40px;
+  width: 45px;
+}
+.service-card h2 {
+  margin: 15px 0px;
+}
+.service-card:hover {
+  border: 2px solid var(--primary);
+  box-shadow: 2px 2px 15px #888888;
+}
+.price-plan {
+  text-align: center;
+  background-color: rgba(220, 142, 107, 0.1);
+  height: 1050px;
+}
+.price-heading {
+  display: inline-block;
+  border-bottom: 3px solid var(--primary);
+  margin: 55px 0px 25px 0px;
+}
+.price-plan-p {
+  width: 50%;
+  margin-left: 350px;
+  margin-bottom: 40px;
+}
+.price-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* height: 700px; */
+  column-gap: 20px;
+  width: 80%;
+  margin-left: 100px;
+}
+.price-card {
+  width: 400px;
+  height: 700px;
+  background-color: white;
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  padding: 0px 20px;
+  border: 2px solid #e6e6e6;
+}
+.price-card h1 {
+  color: var(--primary);
+  font-size: 50px;
+  margin-top: 35px;
+}
+.discount {
+  display: flex;
+  background-color: rgba(220, 142, 107, 0.3);
+  margin-top: 10px;
+  justify-content: center;
+  font-size: 30px;
+}
+.discount-item {
+  padding: 20px;
+  font-style: italic;
+}
+.discount-item2 {
+  font-size: 20px;
+  padding-top: 25px;
+}
+.duration-head {
+  font-size: 30px;
+  margin: 25px 0px;
+}
+.discount-content {
+  border-bottom: 1px dashed rgba(220, 142, 107, 0.3);
+  padding-top: 20px;
+  display: inline-block;
+}
+.booking-btn {
+  font-size: 15px;
+  padding: 15px 20px;
+  margin: 30px 100px;
+  border-radius: 50px;
+  border: 1px solid #e6e6e6;
+  background-color: white;
+}
+.price-card:hover {
+  border: 2px solid var(--primary);
+}
+.price-card:hover > button {
+  background-color: var(--primary);
+  color: white;
+  transition: 0.3s;
+}
+button:hover {
+  cursor: pointer;
+}
+.gallery {
+  padding: 20px;
+  text-align: center;
+}
+.gallery-p {
+  width: 65%;
+  margin-left: 250px;
+  margin-top: 15px;
+}
+.gallery-h1 {
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.gallery-pics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 25px;
+  column-gap: 25px;
+  width: 90%;
+  margin-left: 70px;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+.gallery-pic {
+  height: 300px;
+  background-color: var(--primary);
+  overflow: hidden;
+  border-radius: 5px;
+}
+.gallery-pic img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s linear;
+}
+.gallery-pic img:hover {
+  opacity: 0.3;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.offers {
+  text-align: center;
+  padding-bottom: 100px;
+  margin: 30px;
+}
+.offer-h1 {
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.offer-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 30px;
+  column-gap: 25px;
+  /* background-color: aqua; */
+  /* height: 300px; */
+  width: 85%;
+  margin-left: 4rem;
+  margin-top: 30px;
+}
+.offer-card {
+  /* background-color: red; */
+  display: flex;
+  height: 110px;
+  width: 400px;
+}
+.offer-card img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  padding: 4px;
+  border: 2px solid var(--primary);
+}
+.offers h2 {
+  color: var(--primary);
+  font-style: italic;
+  padding: 10px 15px;
+  font-size: 28px;
+}
+.offers p {
+  margin-top: 10px;
+}
+.testimonial {
+  text-align: center;
+  margin-bottom: 20vh;
+}
+.testimonial h1 {
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  /* background-color: aqua; */
+  margin-top: 5vh;
+  width: 90%;
+  margin-left: 5vw;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28vw;
+  margin: 12px;
+}
+.testimonial-content {
+  padding: 30px 20px;
+  background-color: rgba(220, 142, 107, 0.1);
+}
+.testimonial-member {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.testimonial-member img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 5vw;
+}
+.team {
+  text-align: center;
+  margin-bottom: 25vh;
+}
+.team h1 {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--primary);
+}
+.team p {
+  width: 60%;
+  margin-left: 20vw;
+  margin-top: 2vh;
+}
+.team-cards {
+  padding: 10px;
+  display: flex;
+  margin: 10px;
+  width: 90%;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+.team-card {
+  display: flex;
+  flex-flow: column;
+  /* height: 50vh; */
+}
+.team-card img {
+  border: 2px solid #888888;
+  transition: .3s;
+}
+.team-card img:hover{
+  border-color: var(--primary);
+}
+.team-links {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2.2vw;
+  padding: 1.5vh 0vh;
+}
+.team-links i {
+  color: white;
+  margin: 3px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  transition: 0.3s;
+}
+.team-links i:hover {
+  background-color: #3d1e10;
+  border-color: #888888;
+  cursor: pointer;
+}
+.info{
+  background-color: rgba(220, 142, 107, 0.1);
+  margin-right: 2.2vw;
+  align-items: center;
+  justify-content: center;
+  padding: 3vh 0vh;
+}
+.info1{
+  font-size: 20px;
+  transition: .3s;
+  margin-bottom: 10px;
+}
+.info1:hover{
+  color: var(--primary);
+  cursor: pointer;
+}
+.info2{
+  font-size: 14px;
+}

@@ -1,0 +1,86 @@
+.main-heading {
+  text-align: center;
+  width: 80%;
+  margin-bottom: 60px;
+  padding-left: 200px;
+  line-height: 30px;
+  justify-content: center;
+}
+.heading {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.cards__containers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 600px;
+  /* background-color: red; */
+}
+.monika {
+  grid-template-rows: 60px 60px 1fr;
+}
+img {
+  width: 90%;
+  height: auto;
+}
+.cards-rotating {
+  margin-top: 25px;
+  height: 55%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr 20px;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.item img {
+  height: 20px;
+  width: 26px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.item h1 {
+  display: inline;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.item p {
+  margin-top: 20px;
+  margin-left: 65px;
+}
+.network-links {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.item:hover > img {
+  animation: mymove 0.25s;
+}
+
+@keyframes mymove {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.network-link{
+    margin-top: 45px;
+    text-align: center;
+}
+.network-link i{
+    margin: 10px;
+    padding:15px;
+    color:var(--primary);
+    border: 1px solid var(--primary);
+}
+.network-link i:hover{
+    background-color: var(--primary);
+    border-radius: 50%;
+    color: white;
+    transition-duration: .4s;
+}
+
