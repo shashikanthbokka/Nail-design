@@ -229,7 +229,6 @@ button:hover {
 .testimonial-cards {
   display: flex;
   justify-content: center;
-  background-color: aqua;
   margin-top: 5vh;
   width: 90%;
   margin-left: 5vw;
